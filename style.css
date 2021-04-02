@@ -1,0 +1,51 @@
+.clipboard{
+    position:fixed;
+    color: white;
+    font-family: Roboto;
+}
+.VInfo{
+    z-index: 99999;
+    width:300px;
+}
+.Vinfo p{
+    font-family: Roboto;
+    font-style: italic;
+    Border-bottom: 1.5px solid #949494;
+    color: #949494;
+    position: relative;
+    bottom: 8px;
+    font-size: 10px;
+    left:65px;
+    margin:7px;
+}
+.VT{
+font-family: Roboto;
+font-style: italic;
+color: #949494;
+float:Right;
+font-size: 11px;
+position: relative;
+color: #9F0202;
+}
+.PartsDevider{
+
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    padding-top:3px;
+    font-size:10px;
+    font-family: Roboto;
+    font-weight: 100;
+}
+.PartsDeviderBG{
+    background: #695050;
+    position: relative;
+    width:300px;
+    left:65px;
+    height: 20px;
+    font-weight: 11;
+
+
+}
+
+
