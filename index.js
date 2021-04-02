@@ -1,35 +1,37 @@
+$(document).ready(() => {
+
 window.addEventListener('message', function(event) {
-	let data = event.data
-	if(data.Vehicleinfo) {
-		document.getElementById("VID").innerHTML =  data.ID;
-        document.getElementById("VName").innerHTML =  data.VName;
-        document.getElementById("VPlate").innerHTML =  data.VPlate;
-        document.getElementById("VStats").innerHTML =  data.VStats;
+        let data = event.data
+        if(data.Vehicleinfo) {
+            $("#VID").html(data.ID);
+            $("#VName").html(data.VName);
+            $("#VPlate").html(data.VPlate);
+            $("#VStats").html(data.VStats);
+            $("#VAxle").html(data.VAxle);
+            $("#VClutch").html(data.VClutch);
+            $("#VFuel").html(data.VFuel);
+            $("#VT").html(data.VT);
+            $("#VBrakes").html(data.VBrakes);
+            $("#VRadiator").html(data.VRadiator);
+            $("#VFuelInjector").html(data.VFuelInjector);
+            $("#VElectronics").html(data.VElectronics);
+            $("#VSuspension").html(data.VSuspension);
+            $("#VTires").html(data.VTires);
+            $("#VBody").html(data.VBody);
+            $("#VEngine").html(data.VEngine);
 
-        document.getElementById("VAxle").innerHTML =  data.VAxle;
-        document.getElementById("VClutch").innerHTML =  data.VClutch;
-        document.getElementById("VFuel").innerHTML =  data.VFuel;
-        document.getElementById("VT").innerHTML =  data.VT;
-        document.getElementById("VBrakes").innerHTML =  data.VBrakes;
-        document.getElementById("VRadiator").innerHTML =  data.VRadiator;
-        document.getElementById("VFuelInjector").innerHTML =  data.VFuelInjector;
-        document.getElementById("VElectronics").innerHTML =  data.VElectronics;
-        document.getElementById("VSuspension").innerHTML =  data.VSuspension;
-        document.getElementById("VTires").innerHTML =  data.VTires;
-        document.getElementById("VBody").innerHTML =  data.VBody;
-        document.getElementById("VEngine").innerHTML =  data.VEngine;
-
-    }
-})
+        }
 
 
+        if(item.openSection == "openClipboard") {
+            if(item.openSection == "openNotepad") {
+                $(".container").fadeIn(100); 
+            }
+            if(item.openSection == "close") {
+                $(".container").fadeOut(100)
+            }  
+        }
+    });
 
 
-/*SAMPLE LUA
-SendNUIMessage({
-    Vehicleinfo = True
-	ID = "1",
-    VName = "Sultan RS",
-})
-
-*/ 
+});

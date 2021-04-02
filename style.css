@@ -3,6 +3,9 @@
     color: white;
     font-family: Roboto;
 }
+.container{
+    display:none;
+}
 .VInfo{
     z-index: 99999;
     width:300px;
