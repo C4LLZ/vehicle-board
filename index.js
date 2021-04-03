@@ -22,15 +22,12 @@ window.addEventListener('message', function(event) {
 
         }
 
-
-        if(item.openSection == "openClipboard") {
-            if(item.openSection == "openNotepad") {
-                $(".container").fadeIn(100); 
-            }
-            if(item.openSection == "close") {
-                $(".container").fadeOut(100)
-            }  
-        }
+        if(item.openSection == "openNotepad") {
+            $(".container").fadeIn(100); 
+          }
+          if(item.openSection == "close") {
+            $(".container").fadeOut(100)
+          }  
     });
 
 
